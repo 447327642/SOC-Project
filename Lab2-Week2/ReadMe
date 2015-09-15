@@ -1,0 +1,26 @@
+
+
+Here is the ReadMe file.
+
+DatabaseCommand ———  stores the initial codes for database access;
+
+mydblp.xml ———  stores the first 1000 items from dblp.xml;
+
+dblp.dtd ——   stores the format for the .xml file;
+
+When you import my project, remember to change the path in following files:
+
+DatabaseOperations : line 7 ———  change the DatabaseCommand file path.
+
+MyDOMParser :  line 27  ———  change the mydblp.xml file path.
+
+And you may need to add dblp.dtd in system.dir
+
+
+When you test my codes, you could also find the outputs in console.
+
+Every function is implemented successfully. 
+
+Please feel free to contact with me if you have any question about my project.
+
+Hope you have a good day ! Thank you !

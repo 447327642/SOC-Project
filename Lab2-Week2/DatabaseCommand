@@ -1,0 +1,10 @@
+JDBCDriver=com.mysql.jdbc.Driver
+DBName=Lab2_Article
+User=bailiang
+Password=bailiang
+DBUrl=jdbc:mysql://localhost:3306/
+
+ArticleTable=CREATE TABLE IF NOT EXISTS Article(ArticleId INT NOT NULL AUTO_INCREMENT, Mdate CHAR(64), Keyword CHAR(64), Title TEXT, Pages CHAR(64), Year CHAR(64), Volume CHAR(64), Journal CHAR(64), Number CHAR(64), Url TEXT, Ee TEXT, PRIMARY KEY (ArticleId));
+AuthorTable =CREATE TABLE IF NOT EXISTS Author(AuthorId INT NOT NULL AUTO_INCREMENT, AuthorName CHAR(64), ArticleId INT, PRIMARY KEY(AuthorId), FOREIGN KEY(ArticleId) REFERENCES Article(ArticleId));
+
+

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://DefaultNamespace" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://DefaultNamespace" xmlns:intf="http://DefaultNamespace" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://DefaultNamespace" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="getCoAuthor">
+    <complexType>
+     <sequence>
+      <element name="authorName" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getCoAuthorResponse">
+    <complexType>
+     <sequence>
+      <element name="getCoAuthorReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="searchKeyWord">
+    <complexType>
+     <sequence>
+      <element name="keyword" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="searchKeyWordResponse">
+    <complexType>
+     <sequence>
+      <element name="searchKeyWordReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="weatherCoAuthor">
+    <complexType>
+     <sequence>
+      <element name="author1" type="xsd:string"/>
+      <element name="author2" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="weatherCoAuthorResponse">
+    <complexType>
+     <sequence>
+      <element name="weatherCoAuthorReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getPaperByTitle">
+    <complexType>
+     <sequence>
+      <element name="title" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getPaperByTitleResponse">
+    <complexType>
+     <sequence>
+      <element name="getPaperByTitleReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getAllPublications">
+    <complexType>
+     <sequence>
+      <element name="authorName" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getAllPublicationsResponse">
+    <complexType>
+     <sequence>
+      <element name="getAllPublicationsReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="weatherCoAuthorRequest">
+
+      <wsdl:part element="impl:weatherCoAuthor" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="searchKeyWordRequest">
+
+      <wsdl:part element="impl:searchKeyWord" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCoAuthorRequest">
+
+      <wsdl:part element="impl:getCoAuthor" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCoAuthorResponse">
+
+      <wsdl:part element="impl:getCoAuthorResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="weatherCoAuthorResponse">
+
+      <wsdl:part element="impl:weatherCoAuthorResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getPaperByTitleResponse">
+
+      <wsdl:part element="impl:getPaperByTitleResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getAllPublicationsResponse">
+
+      <wsdl:part element="impl:getAllPublicationsResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getAllPublicationsRequest">
+
+      <wsdl:part element="impl:getAllPublications" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="searchKeyWordResponse">
+
+      <wsdl:part element="impl:searchKeyWordResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getPaperByTitleRequest">
+
+      <wsdl:part element="impl:getPaperByTitle" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="TestMain">
+
+      <wsdl:operation name="getCoAuthor">
+
+         <wsdl:input message="impl:getCoAuthorRequest" name="getCoAuthorRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getCoAuthorResponse" name="getCoAuthorResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="searchKeyWord">
+
+         <wsdl:input message="impl:searchKeyWordRequest" name="searchKeyWordRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:searchKeyWordResponse" name="searchKeyWordResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="weatherCoAuthor">
+
+         <wsdl:input message="impl:weatherCoAuthorRequest" name="weatherCoAuthorRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:weatherCoAuthorResponse" name="weatherCoAuthorResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getPaperByTitle">
+
+         <wsdl:input message="impl:getPaperByTitleRequest" name="getPaperByTitleRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getPaperByTitleResponse" name="getPaperByTitleResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getAllPublications">
+
+         <wsdl:input message="impl:getAllPublicationsRequest" name="getAllPublicationsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getAllPublicationsResponse" name="getAllPublicationsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="TestMainSoapBinding" type="impl:TestMain">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="getCoAuthor">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getCoAuthorRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getCoAuthorResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="searchKeyWord">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="searchKeyWordRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="searchKeyWordResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="weatherCoAuthor">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="weatherCoAuthorRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="weatherCoAuthorResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getPaperByTitle">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getPaperByTitleRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getPaperByTitleResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getAllPublications">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getAllPublicationsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getAllPublicationsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="TestMainService">
+
+      <wsdl:port binding="impl:TestMainSoapBinding" name="TestMain">
+
+         <wsdlsoap:address location="http://localhost:8080/Lab2-Week2/services/TestMain"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
