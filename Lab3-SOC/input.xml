@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependentObject class="Author">
+	<property name="firstName" type="String" getter="getFirstName" setter="setFirstName"/>
+	<property name="lastName" type="String" getter="getLastName" setter="setLastName"/>
+	<property name="affiliation" type="String" getter="getAffiliation" setter="setAffiliation"/>
+	<property name="phoneNumber" type="String" getter="getPhoneNumber" setter="setPhoneNumber"/>
+	<property name="email" type="String" getter="getEmail" setter="setEmail"/>
+	<property name="title" type="String" getter="getTitle" setter="setTitle"/>
+	<property name="researcheInterets" type="String" getter="getResearchInterets" setter="setResearchInterets"/>	
+</dependentObject>
